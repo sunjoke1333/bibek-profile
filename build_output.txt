@@ -1,0 +1,47 @@
+
+> bibek.com@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+
+> Build error occurred
+Error: Turbopack build failed with 1 errors:
+./src/components/Contact.tsx:8:1
+Module not found: Can't resolve '@/components/ui/form'
+   6 | import * as z from "zod";
+   7 | import { Button } from "@/components/ui/button";
+>  8 | import {
+     | ^^^^^^^^
+>  9 |   Form,
+     | ^^^^^^^
+> 10 |   FormControl,
+     | ^^^^^^^
+> 11 |   FormField,
+     | ^^^^^^^
+> 12 |   FormItem,
+     | ^^^^^^^
+> 13 |   FormLabel,
+     | ^^^^^^^
+> 14 |   FormMessage,
+     | ^^^^^^^
+> 15 | } from "@/components/ui/form";
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  16 | import { Input } from "@/components/ui/input";
+  17 | import { Textarea } from "@/components/ui/textarea";
+  18 |
+
+Import map: aliased to relative './src/components/ui/form' inside of [project]/
+
+
+Import trace:
+  Server Component:
+    ./src/components/Contact.tsx
+    ./src/app/page.tsx
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+    at <unknown> (./src/components/Contact.tsx:8:1)
+    at <unknown> (https://nextjs.org/docs/messages/module-not-found)
