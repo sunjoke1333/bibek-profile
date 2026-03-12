@@ -7,24 +7,24 @@ import { Card, CardContent } from "@/components/ui/card";
 export function Projects() {
   const projects = [
     {
-      title: "Visionary Commerce",
-      subtitle: "The future of retail, delivered.",
-      description: "A high-performance full-stack platform built with Next.js, Stripe, and a focus on sub-100ms interactions.",
-      tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
-      github: "https://github.com/bibekpoudyal",
+      title: "Enterprise Sales Hub",
+      subtitle: "Operations for Ncell Projects.",
+      description: "Faced with fragmented sales data, I architected a centralized tracking hub that synchronized field metrics in real-time, increasing team reporting efficiency by 40%.",
+      tags: ["React", "PostgreSQL", "Real-time Data", "System Design"],
+      github: "https://github.com/sunjoke1333/bibek-profile",
       demo: "#",
-      image: "linear-gradient(135deg, #1c1c1e 0%, #0a0a0a 100%)",
-      accent: "#f5f5f7"
+      image: "linear-gradient(135deg, oklch(0.2 0.05 240) 0%, oklch(0.1 0.05 240) 100%)",
+      accent: "var(--primary)"
     },
     {
-      title: "Flow State",
-      subtitle: "Management, simplified.",
-      description: "A collaborative workspace with real-time sync and a minimalist interface inspired by digital zen.",
-      tags: ["React", "Node.js", "Socket.io", "MongoDB"],
-      github: "https://github.com/bibekpoudyal",
+      title: "Digital Asset Portfolio",
+      subtitle: "Performance-first storytelling.",
+      description: "Designed a low-latency exhibition platform for high-resolution visual assets. Optimized for zero-cumulutive layout shift and ultra-fast visual rendering.",
+      tags: ["Next.js", "Image Optimization", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/sunjoke1333/bibek-profile",
       demo: "#",
-      image: "linear-gradient(135deg, #2c2c2e 0%, #1c1c1e 100%)",
-      accent: "#f5f5f7"
+      image: "linear-gradient(135deg, oklch(0.15 0.1 300) 0%, oklch(0.1 0.05 300) 100%)",
+      accent: "var(--accent)"
     },
   ];
 
@@ -37,10 +37,10 @@ export function Projects() {
         viewport={{ once: true }}
         className="text-center md:text-left space-y-4"
       >
-        <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-[#f5f5f7]">
+        <h2 className="text-4xl md:text-7xl font-bold tracking-tight text-foreground">
           Exceptional Work.
         </h2>
-        <div className="w-24 h-1.5 bg-[#f5f5f7]/10 rounded-full" />
+        <div className="w-24 h-1.5 bg-primary/20 rounded-full" />
       </motion.div>
 
       <div className="space-y-12">
@@ -51,7 +51,7 @@ export function Projects() {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: [0.16, 1, 0.3, 1], delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="group relative overflow-hidden rounded-[3rem] border border-[#f5f5f7]/10 bg-[#0a0a0a]"
+            className="group relative overflow-hidden rounded-[3rem] border border-foreground/10 bg-card"
           >
             <div 
               className="absolute inset-0 opacity-20 group-hover:opacity-40 transition-opacity duration-1000"
@@ -61,18 +61,18 @@ export function Projects() {
             <div className="relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 p-12 md:p-24 items-center">
               <div className="space-y-8">
                 <div className="space-y-4">
-                  <h4 className="text-lg font-bold text-[#f5f5f7]/40 uppercase tracking-[0.3em]">
+                  <h4 className="text-lg font-bold text-foreground/40 uppercase tracking-[0.3em]">
                     Featured Project
                   </h4>
-                  <h3 className="text-4xl md:text-6xl font-bold text-[#f5f5f7] tracking-tight">
+                  <h3 className="text-4xl md:text-6xl font-bold text-foreground tracking-tight">
                     {project.title}
                   </h3>
-                  <p className="text-2xl text-[#f5f5f7]/60 font-medium tracking-tight italic">
+                  <p className="text-2xl text-primary/60 font-medium tracking-tight italic">
                     {project.subtitle}
                   </p>
                 </div>
                 
-                <p className="text-xl text-[#f5f5f7]/40 leading-relaxed max-w-md">
+                <p className="text-xl text-foreground/40 leading-relaxed max-w-md">
                   {project.description}
                 </p>
 
@@ -81,7 +81,7 @@ export function Projects() {
                     href={project.github} 
                     className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#f5f5f7] text-[#0a0a0a] rounded-full font-bold hover:scale-[1.05] transition-transform active:scale-95"
                   >
-                    View Project <ChevronRight className="w-5 h-5" />
+                    Examine Codebase <ChevronRight className="w-5 h-5" />
                   </a>
                   <a 
                     href={project.github} 
